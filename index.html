@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>知原药业（Ziyond）港股招股书 · 渠道/品种/院内院外/费用分析</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#fff; --ink:#1f2a37; --muted:#6b7280;
+    --blue:#2563eb; --green:#0e9f6e; --orange:#d97706; --red:#e02424; --purple:#7c3aed;
+    --line:#e5e7eb;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;
+    line-height:1.5;font-size:14px;}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 60px;}
+  h1{font-size:23px;margin:0 0 4px;}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:18px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:20px 22px;margin-bottom:18px;box-shadow:0 1px 2px rgba(0,0,0,.03);}
+  .card h2{font-size:17px;margin:0 0 12px;display:flex;align-items:center;gap:8px;}
+  .tag{font-size:11px;background:#eef2ff;color:#4338ca;padding:2px 8px;border-radius:20px;font-weight:600;}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px;}
+  th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--line);}
+  th:first-child,td:first-child{text-align:left;}
+  thead th{background:#f9fafb;color:var(--muted);font-weight:600;border-bottom:2px solid var(--line);}
+  tbody tr:hover{background:#fcfcfd;}
+  .hl{font-weight:700;color:var(--blue);}
+  .pos{color:var(--green);font-weight:600;}
+  .neg{color:var(--red);font-weight:600;}
+  .note{color:var(--muted);font-size:12px;margin-top:10px;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr;}}
+  .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:6px;}
+  .kpi .b{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:12px 14px;}
+  .kpi .v{font-size:20px;font-weight:700;}
+  .kpi .l{font-size:11px;color:var(--muted);margin-top:2px;}
+  .bar-row{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:12px;}
+  .bar-row .name{width:120px;flex:none;color:var(--muted);text-align:right;font-size:12px;}
+  .bar-track{flex:1;background:#f1f5f9;border-radius:6px;height:20px;position:relative;overflow:hidden;}
+  .bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;
+    padding-right:6px;color:#fff;font-size:11px;font-weight:600;}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:8px;}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:middle;}
+  .stack{display:flex;height:30px;border-radius:6px;overflow:hidden;margin:5px 0;font-size:11px;color:#fff;}
+  .stack > div{display:flex;align-items:center;justify-content:center;white-space:nowrap;}
+  .takeaway{background:#fffbeb;border-left:4px solid var(--orange);padding:12px 14px;border-radius:0 8px 8px 0;font-size:13px;margin-top:10px;}
+  .qa{background:#eff6ff;border-left:4px solid var(--blue);padding:12px 14px;border-radius:0 8px 8px 0;font-size:13px;}
+  .est{background:#f0fdf4;border-left:4px solid var(--green);padding:12px 14px;border-radius:0 8px 8px 0;font-size:13px;}
+  .src{font-size:12px;color:var(--muted);}
+  a{color:var(--blue);}
+  .mini{font-size:11px;color:var(--muted);}
+  .brand-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .brand{background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:14px 16px;border-top:4px solid var(--bc,#2563eb);}
+  .brand .bn{font-size:16px;font-weight:700;}
+  .brand .pos1{font-size:12px;color:var(--muted);margin:4px 0 8px;}
+  .brand .desc{font-size:12.5px;line-height:1.55;}
+  .pill{display:inline-block;font-size:10px;padding:1px 7px;border-radius:10px;background:#eef2ff;color:#4338ca;margin:2px 3px 0 0;font-weight:600;}
+  .arch{display:flex;flex-direction:column;gap:10px;}
+  .arch .tier{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .arch .lbl{width:120px;flex:none;font-size:12px;color:var(--muted);text-align:right;}
+  .arch .box{border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px;background:#fff;}
+  .rank{font-size:12px;color:var(--green);font-weight:600;}
+  .insight{background:#eff6ff;border-left:4px solid var(--blue);padding:12px 14px;border-radius:0 8px 8px 0;font-size:13px;margin-top:10px;}
+  .lftable th,.lftable td{text-align:left;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>知原药业（Ziyond Pharmaceutical）港股招股书分析</h1>
+  <div class="sub">江苏知原药业股份有限公司 · 外用皮肤科制药 · filing 2026-07-09（港交所）· 独家保荐人：中信证券（香港）<br>
+  数据来源：港交所披露易招股书（草擬本，370页），币种人民币千元，除特别说明外。</div>
+
+  <!-- 概览 -->
+  <div class="card">
+    <h2>一、公司速览 <span class="tag">外用皮肤科</span></h2>
+    <div class="kpi">
+      <div class="b"><div class="v">¥13.24亿</div><div class="l">2025收入（同比+17.6%）</div></div>
+      <div class="b"><div class="v">66.8%</div><div class="l">2025毛利率（连年下滑）</div></div>
+      <div class="b"><div class="v">¥4.75亿</div><div class="l">2025销售费用</div></div>
+      <div class="b"><div class="v">58.0%</div><div class="l">2025线上渠道收入占比</div></div>
+    </div>
+    <div class="note">成立于1999年，无锡。专注外用皮肤科，覆盖六大核心治疗领域、50+商业化产品。核心单品：丽芙®甲硝唑凝胶（"小粉管"祛痘）、洛芙®联苯苄唑溶液（手足癣）、质润®米诺地尔搽剂（脱发）。机构股东含欧莱雅关联基金、创新工场、阿里健康（同时为最大客户+核心线上批发商）。</div>
+  </div>
+
+  <!-- 渠道收入 -->
+  <div class="card">
+    <h2>二、分渠道销售规模（按收入划分）</h2>
+    <table>
+      <thead>
+        <tr><th>渠道（人民币千元）</th><th>2023</th><th>占比</th><th>2024</th><th>占比</th><th>2025</th><th>占比</th><th>2026Q1</th><th>占比</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>线上批发（B2B平台采购）</td><td>401,675</td><td>39.0%</td><td>459,005</td><td>40.8%</td><td>522,425</td><td>39.5%</td><td>126,806</td><td>37.7%</td></tr>
+        <tr class="hl"><td>线上零售（DTC直营旗舰店）</td><td>76,533</td><td>7.4%</td><td>186,931</td><td>16.6%</td><td>245,496</td><td>18.5%</td><td>81,259</td><td>24.1%</td></tr>
+        <tr><td>线上小计</td><td>478,208</td><td>46.4%</td><td>645,936</td><td>57.4%</td><td>767,921</td><td>58.0%</td><td>208,065</td><td>61.8%</td></tr>
+        <tr><td>线下销售（经分销商）</td><td>541,490</td><td>52.5%</td><td>463,819</td><td>41.2%</td><td>540,299</td><td>40.8%</td><td>123,439</td><td>36.6%</td></tr>
+        <tr><td>总收入</td><td>1,030,560</td><td>100%</td><td>1,125,700</td><td>100%</td><td>1,323,670</td><td>100%</td><td>336,778</td><td>100%</td></tr>
+      </tbody>
+    </table>
+    <div class="note">口径：①"线上批发"=卖给电商平台/批发客户的批量供货（B2B，约14家线上批发客户，含阿里健康、京东健康）；"线上零售"=抖音/快手/拼多多<b>自营旗舰店</b>DTC，知原保留货权至交付终端。②"线下销售"主要指向234家分销商的买断销售，分销商再覆盖<b>公立医院、私立诊所及零售连锁药店</b>。③2025年线上合计占收入约58%，触达约3,060万笔付费购买。</div>
+
+    <h3 style="font-size:14px;margin:16px 0 8px;">零售渠道（线上零售 DTC）收入增长</h3>
+    <div class="bar-row"><span class="name">2023</span><div class="bar-track"><div class="bar-fill" style="width:31%;background:var(--green)">¥0.77亿</div></div></div>
+    <div class="bar-row"><span class="name">2024</span><div class="bar-track"><div class="bar-fill" style="width:76%;background:var(--green)">¥1.87亿</div></div></div>
+    <div class="bar-row"><span class="name">2025</span><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--green)">¥2.45亿</div></div></div>
+    <div class="note">线上零售DTC两年增长 <span class="pos">+220.8%</span>（0.77→2.45亿），占比7.4%→18.5%；2026Q1升至24.1%（¥0.81亿，同比+46.4%），增速最快。</div>
+  </div>
+
+  <!-- 品种/治疗领域 -->
+  <div class="card">
+    <h2>三、各品种/治疗领域销售占比 <span class="tag">按治疗领域</span></h2>
+    <table>
+      <thead>
+        <tr><th>治疗领域（人民币千元）</th><th>2023</th><th>占比</th><th>2024</th><th>占比</th><th>2025</th><th>占比</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>鼻面部皮肤病</td><td>284,075</td><td>27.6%</td><td>248,414</td><td>22.1%</td><td>272,029</td><td>20.6%</td></tr>
+        <tr><td>浅部真菌感染</td><td>263,390</td><td>25.6%</td><td>288,469</td><td>25.6%</td><td>283,440</td><td>21.4%</td></tr>
+        <tr class="hl"><td>免疫炎症性皮肤病</td><td>191,185</td><td>18.6%</td><td>253,001</td><td>22.5%</td><td>324,389</td><td>24.5%</td></tr>
+        <tr><td>头皮及毛发疾病</td><td>36,415</td><td>3.5%</td><td>118,741</td><td>10.5%</td><td>142,708</td><td>10.8%</td></tr>
+        <tr><td>甲癣</td><td>3,626</td><td>0.3%</td><td>53,173</td><td>4.7%</td><td>104,080</td><td>7.9%</td></tr>
+        <tr><td>色素障碍性皮肤病</td><td>–</td><td>0%</td><td>6,671</td><td>0.6%</td><td>34,637</td><td>2.5%</td></tr>
+        <tr><td>皮肤科产品小计</td><td>778,691</td><td>75.6%</td><td>968,469</td><td>86.0%</td><td>1,161,283</td><td>87.7%</td></tr>
+        <tr><td>自身免疫性风湿病产品</td><td>217,962</td><td>21.2%</td><td>124,904</td><td>11.1%</td><td>134,802</td><td>10.2%</td></tr>
+        <tr><td>其他产品</td><td>23,045</td><td>2.1%</td><td>16,382</td><td>1.5%</td><td>12,135</td><td>0.9%</td></tr>
+      </tbody>
+    </table>
+    <div class="note">招股书未披露单品（SKU）收入，仅披露"按治疗领域"拆分；占比基数为总收入。皮肤科产品2025年占87.7%，自免风湿（非皮肤）占10.2%。</div>
+
+    <h3 style="font-size:14px;margin:16px 0 8px;">2025年治疗领域收入结构</h3>
+    <div class="bar-row"><span class="name">免疫炎症性</span><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--purple)">¥3.24亿 24.5%</div></div></div>
+    <div class="bar-row"><span class="name">浅部真菌</span><div class="bar-track"><div class="bar-fill" style="width:87%;background:var(--blue)">¥2.83亿 21.4%</div></div></div>
+    <div class="bar-row"><span class="name">鼻面部</span><div class="bar-track"><div class="bar-fill" style="width:84%;background:var(--orange)">¥2.72亿 20.6%</div></div></div>
+    <div class="bar-row"><span class="name">头皮毛发</span><div class="bar-track"><div class="bar-fill" style="width:44%;background:var(--green)">¥1.43亿 10.8%</div></div></div>
+    <div class="bar-row"><span class="name">甲癣</span><div class="bar-track"><div class="bar-fill" style="width:32%;background:var(--red)">¥1.04亿 7.9%</div></div></div>
+    <div class="bar-row"><span class="name">色素/自免/其他</span><div class="bar-track"><div class="bar-fill" style="width:51%;background:var(--muted)">¥1.81亿 13.6%</div></div></div>
+
+    <div class="note" style="margin-top:12px;"><b>核心单品（招股书披露，多为品类第一）：</b>
+    丽芙®甲硝唑凝胶（玫瑰痤疮，全渠道第一）、洛芙®联苯苄唑溶液（手足癣，全渠道第一）、丽芙®克林霉素磷酸酯外用溶液（痤疮，全渠道第一）、洛芙®环吡酮胺乳膏（甲癣，全渠道第一）、金纽尔®复方丙酸氯倍他索软膏（银屑病，全渠道第一）、质润®米诺地尔搽剂（脱发）；丽芙®阿达帕林凝胶/吡美莫司乳膏/氨甲环酸片（线上品类第一）。前五大治疗领域中，免疫炎症性、甲癣、头皮毛发增速最快，是第二增长曲线。</div>
+  </div>
+
+  <!-- 院内院外 -->
+  <div class="card">
+    <h2>四、院内 / 院外销售占比分析</h2>
+    <div class="takeaway">
+      <b>招股书未单列"院内/院外"口径。</b> 披露的最小颗粒为「渠道」（线上批发/线上零售/线下）与「终端描述」。以下为基于披露信息的分析推导（非直接披露数）。
+    </div>
+
+    <h3 style="font-size:14px;margin:14px 0 8px;">可推导的终端映射</h3>
+    <table>
+      <thead><tr><th>招股书口径</th><th>对应终端</th><th>归属</th><th>2025占比</th></tr></thead>
+      <tbody>
+        <tr><td>线上（批发+零售）</td><td>网上药店/互联网医院/电商DTC → 消费者</td><td>基本为<b>院外</b></td><td>58.0%</td></tr>
+        <tr><td>线下·分销商→医院/诊所</td><td>公立医院、私立诊所</td><td><b>院内</b></td><td rowspan="2">40.8%<br>（二者合计，未拆分）</td></tr>
+        <tr><td>线下·分销商→零售连锁药店</td><td>零售药房</td><td><b>院外</b></td></tr>
+      </tbody>
+    </table>
+
+    <div class="est" style="margin-top:14px;">
+      <b>分析估算（院外占主导）：</b> 知原产品绝大多数为<b>非处方药（OTC）</b>皮肤科药，且线上+自营DTC已达58%，叠加线下分销中零售连锁药店占比高，估算<b>院外（线上全渠道+线下零售药房）约占收入80%以上</b>；<b>院内（医院/诊所+互联网医院处方）约占20%以下</b>，且集中于少数处方药（他克莫司软膏、金纽尔、氨甲环酸片等）。
+      <br><span class="mini">依据：① 招股书称"线下销售主要经分销商覆盖公立医院、私立诊所及零售连锁药店"；② 六大领域多为OTC，8款产品在线上/全渠道品类第一，依赖DTC与零售而非医院处方；③ 自免风湿（偏处方）仅占10.2%且占比下降。</span>
+    </div>
+    <div class="note">若需精确院内外拆分，需等待招股书后续补充或公司进一步披露——当前文件为草拟本，未提供该维度。</div>
+  </div>
+
+  <!-- Q&A -->
+  <div class="card">
+    <h2>五、问答：线上批发是否包含京东健康、阿里健康大药房的供货？</h2>
+    <div class="qa">
+      <b>结论：是，包含。</b> 招股书明确将<b>阿里健康</b>列为"主要的线上批发商之一"（risk factors 原文），京东健康亦被列为货架式电商平台（线上批发客户）。
+      <br><br>
+      <b>机制区分（关键，避免混淆）：</b>
+      <ul style="margin:6px 0 0;padding-left:20px;">
+        <li><b>线上批发</b>= 知原以协议供货价，批量卖给阿里健康、京东健康等平台（B2B）。平台/其旗下<b>阿里健康大药房、京东大药房</b>再向消费者转售。此部分计入"线上批发"（2025：¥5.22亿，39.5%）。</li>
+        <li><b>线上零售</b>= 知原在<b>抖音/快手/拼多多自营旗舰店</b>的DTC，知原保留货权至交付终端（2025：¥2.45亿，18.5%）。这是<b>另一笔独立收入</b>，不等于供给阿里健康大药房。</li>
+      </ul>
+      因此：<b>供给阿里健康/京东健康（含其大药房）的货，落在"线上批发"；知原自己的DTC旗舰店收入，才是"线上零售"。</b> 客户A（即阿里健康）2025年贡献收入¥2.64亿（占20.0%），同时为最大线上批发客户+股东+推广合作伙伴（客户与供应商重叠）。
+    </div>
+  </div>
+
+  <!-- 费用 -->
+  <div class="card">
+    <h2>六、销售费用规模与结构</h2>
+    <table>
+      <thead>
+        <tr><th>销售费用（人民币千元）</th><th>2023</th><th>占收%</th><th>2024</th><th>占收%</th><th>2025</th><th>占收%</th><th>2026Q1</th><th>占收%</th></tr>
+      </thead>
+      <tbody>
+        <tr class="hl"><td>销售费用合计</td><td>407,258</td><td>39.5%</td><td>456,186</td><td>40.5%</td><td>475,300</td><td>35.9%</td><td>147,317</td><td>43.7%</td></tr>
+        <tr><td>　营销及推广费用</td><td>312,148</td><td>76.6%*</td><td>356,200</td><td>78.1%*</td><td>383,470</td><td>80.7%*</td><td>122,289</td><td>83.0%*</td></tr>
+        <tr><td>　员工成本</td><td>73,911</td><td>18.1%*</td><td>72,415</td><td>15.9%*</td><td>69,796</td><td>14.7%*</td><td>20,450</td><td>13.9%*</td></tr>
+        <tr><td>　办公差旅/仓储/其他</td><td>21,199</td><td>5.2%*</td><td>27,571</td><td>6.0%*</td><td>21,034</td><td>4.4%*</td><td>4,578</td><td>3.1%*</td></tr>
+      </tbody>
+    </table>
+    <div class="note">* 占比分母为销售费用合计。营销及推广费主要含电商平台营销费、广告费、线下营销；超八成投向营销，高度电商化，与"线上零售"扩张直接挂钩。销售费用占收比：39.5%→40.5%→35.9%；2026Q1反弹至43.7%。</div>
+    <div class="grid2" style="margin-top:14px;">
+      <div>
+        <h3 style="font-size:14px;margin:6px 0;">2025销售费用构成</h3>
+        <div class="stack" style="height:26px;">
+          <div style="width:80.7%;background:var(--orange)">营销推广 80.7%</div>
+          <div style="width:14.7%;background:var(--blue)">员工 14.7%</div>
+          <div style="width:4.6%;background:var(--green)">其他 4.6%</div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:14px;margin:6px 0;">费用率趋势</h3>
+        <div class="bar-row"><span class="name">销售费用率</span><div class="bar-track"><div class="bar-fill" style="width:35.9%;background:var(--red)">35.9%</div></div></div>
+        <div class="bar-row"><span class="name">毛利率</span><div class="bar-track"><div class="bar-fill" style="width:66.8%;background:var(--green)">66.8%</div></div></div>
+        <div class="bar-row"><span class="name">净利率</span><div class="bar-track"><div class="bar-fill" style="width:7.1%;background:var(--muted)">7.1%</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 结论 -->
+  <div class="card">
+    <h2>七、关键结论</h2>
+    <div class="takeaway">1. <b>品种结构均衡化：</b> 鼻面部(20.6%)+浅部真菌(21.4%)+免疫炎症(24.5%)为三大支柱；甲癣(7.9%)、头皮毛发(10.8%)增速最快，从边缘品类跃升为第二曲线。</div>
+    <div class="takeaway">2. <b>院外主导：</b> 估算院外占收入80%+（线上58%+线下零售药房），院内（医院/互联网医院处方）估计&lt;20%，与OTC皮肤科定位一致。</div>
+    <div class="takeaway">3. <b>线上批发≠线上零售：</b> 供给阿里健康/京东健康（含大药房）属"线上批发"(B2B，¥5.22亿)；抖音/快手/拼多多自营旗舰店才是"线上零售"DTC(¥2.45亿)。二者是独立收入，勿混淆。</div>
+    <div class="takeaway">4. <b>费用重度电商化：</b> 销售费用¥4.75亿中80.7%为营销推广（电商流量为主），是"以费用换份额"模型；2026Q1费率反弹至43.7%致净利率仅3.7%。</div>
+    <div class="note" style="margin-top:12px;">说明：招股书未将费用按渠道拆分，亦未单列院内外/单品收入；"院外占比""单品表现"为基于披露信息的分析推导。原始文件：<a href="https://www1.hkexnews.hk/app/sehk/2026/108732/documents/sehk26070900218_c.pdf" target="_blank">港交所 sehk26070900218_c.pdf</a></div>
+  </div>
+
+  <!-- 八、品牌矩阵与使用定位 -->
+  <h2 style="margin-top:30px;font-size:19px;border-top:2px solid var(--line);padding-top:18px;">八、品牌矩阵与使用定位分析</h2>
+
+  <div class="card">
+    <h2><span class="tag">架构</span> 品牌架构：企业品牌 Ziyond + 五大产品品牌</h2>
+    <div class="arch">
+      <div class="tier"><span class="lbl">企业品牌</span><div class="box"><b>知原药业 Ziyond</b> · 外用皮肤科制药企业（研发+制造+商业化）</div></div>
+      <div class="tier"><span class="lbl">产品品牌</span>
+        <div class="box" style="border-color:var(--blue)"><b style="color:var(--blue)">丽芙®</b> 皮肤全科（痤疮/皮炎/色素）</div>
+        <div class="box" style="border-color:var(--green)"><b style="color:var(--green)">洛芙®</b> 抗真菌/甲癣</div>
+        <div class="box" style="border-color:var(--orange)"><b style="color:var(--orange)">金纽尔®</b> 银屑病等顽疾</div>
+        <div class="box" style="border-color:var(--purple)"><b style="color:var(--purple)">质茂®</b> 毛发/脱发</div>
+        <div class="box" style="border-color:var(--red)"><b style="color:var(--red)">质润®</b> 头皮洗护</div>
+      </div>
+    </div>
+    <div class="note">招股书披露：截至最后实际可行日期，已在六大核心治疗领域商业化逾 50 款产品，分属上述产品品牌。品牌命名逻辑清晰——按治疗领域/人群标签化（"芙"系皮肤、"茂"系毛发、"润"系洗护）。</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="tag">明细</span> 五大品牌代表产品、定位与渠道地位</h2>
+    <table class="lftable">
+      <thead><tr><th>品牌</th><th>代表产品</th><th>适应症/定位</th><th>参考零售价</th><th>医保</th><th>2025渠道地位</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="7" class="hl" style="color:var(--blue)">丽芙®<br><span style="font-weight:400;color:var(--muted);font-size:11px;">皮肤全科王牌</span></td>
+            <td>甲硝唑凝胶</td><td>丘疹/脓疱/玫瑰痤疮</td><td>¥18.89/20g</td><td>是</td><td class="rank">全渠道第一</td></tr>
+        <tr><td>阿达帕林凝胶</td><td>轻中度寻常痤疮</td><td>¥19.9/16g</td><td>是</td><td class="rank">线上第一</td></tr>
+        <tr><td>维A酸乳膏</td><td>痤疮、毛周角化</td><td>¥18.9/10g</td><td>是</td><td>—</td></tr>
+        <tr><td>克林霉素磷酸酯外用溶液</td><td>寻常痤疮</td><td>¥31.2/30ml</td><td>否</td><td class="rank">全渠道第一</td></tr>
+        <tr><td>吡美莫司乳膏</td><td>轻中度特应性皮炎</td><td>¥110/10g</td><td>是</td><td class="rank">线上第一</td></tr>
+        <tr><td>他克莫司软膏</td><td>中重度特应性皮炎</td><td>¥64/15g</td><td>是</td><td>—</td></tr>
+        <tr><td>氨甲环酸片</td><td>黄褐斑（色素）</td><td>¥160/36片</td><td>是</td><td class="rank">线上第一</td></tr>
+
+        <tr><td rowspan="4" class="hl" style="color:var(--green)">洛芙®<br><span style="font-weight:400;color:var(--muted);font-size:11px;">抗真菌专科</span></td>
+            <td>联苯苄唑溶液</td><td>手/足/体癣</td><td>¥39.25/60ml</td><td>是</td><td class="rank">全渠道第一</td></tr>
+        <tr><td>盐酸特比萘芬喷雾剂</td><td>手/足/体癣</td><td>¥32.37/40ml</td><td>否</td><td>—</td></tr>
+        <tr><td>盐酸阿莫罗芬搽剂</td><td>甲癣（灰指甲）</td><td>¥137/2ml</td><td>否</td><td>上市3月线上第2</td></tr>
+        <tr><td>环吡酮胺乳膏</td><td>甲癣、足/体癣</td><td>¥37.38/30g</td><td>是</td><td class="rank">全渠道第一</td></tr>
+
+        <tr><td rowspan="2" class="hl" style="color:var(--orange)">金纽尔®<br><span style="font-weight:400;color:var(--muted);font-size:11px;">银屑病顽疾</span></td>
+            <td>复方丙酸氯倍他索软膏</td><td>寻常型银屑病</td><td>¥48.46/30g</td><td>否</td><td class="rank">全渠道第一</td></tr>
+        <tr><td>卡泊三醇搽剂</td><td>头皮银屑病</td><td>¥98/30ml</td><td>是</td><td>—</td></tr>
+
+        <tr><td class="hl" style="color:var(--purple)">质茂®<br><span style="font-weight:400;color:var(--muted);font-size:11px;">毛发第二曲线</span></td>
+            <td>米诺地尔搽剂</td><td>雄激素性脱发(AGA)、斑秃</td><td>¥65.8/60ml</td><td>否</td><td>高增长品类</td></tr>
+
+        <tr><td class="hl" style="color:var(--red)">质润®<br><span style="font-weight:400;color:var(--muted);font-size:11px;">洗护延伸</span></td>
+            <td>二硫化硒去屑洗发水</td><td>头皮去屑（医疗级护发）</td><td>¥99/300ml</td><td>否</td><td>消费级延伸</td></tr>
+      </tbody>
+    </table>
+    <div class="note">医保列=是否纳入国家医保药品目录（招股书披露）。丽芙®覆盖最广（7款代表产品），是品牌组合的核心资产；质茂®、质润®代表向"消费医疗/个护"延伸的第二曲线。</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="tag">定位</span> 各品牌的使用场景与战略角色</h2>
+    <div class="brand-grid">
+      <div class="brand" style="--bc:var(--blue)">
+        <div class="bn" style="color:var(--blue)">丽芙®</div>
+        <div class="pos1">皮肤问题"全科王牌"</div>
+        <div class="desc">覆盖痤疮、玫瑰痤疮、特应性皮炎、黄褐斑四大高频皮肤问题。OTC+处方兼具，轻症自用、重症处方双覆盖。是收入与品牌力核心，也是DTC线上零售的引流主力（甲硝唑凝胶"小粉管"心智强）。<br>
+        <span class="pill">痤疮</span><span class="pill">皮炎</span><span class="pill">色素</span><span class="pill">玫瑰痤疮</span></div>
+      </div>
+      <div class="brand" style="--bc:var(--green)">
+        <div class="bn" style="color:var(--green)">洛芙®</div>
+        <div class="pos1">抗真菌 / 甲癣专科</div>
+        <div class="desc">专注浅部真菌感染与甲癣（灰指甲）。联苯苄唑、环吡酮胺为全渠道第一，阿莫罗芬搽剂主攻高客单甲癣（¥137/2ml）。客单价跨度大，是"刚需+高复购"品类。<br>
+        <span class="pill">手足癣</span><span class="pill">甲癣</span><span class="pill">体癣</span></div>
+      </div>
+      <div class="brand" style="--bc:var(--orange)">
+        <div class="bn" style="color:var(--orange)">金纽尔®</div>
+        <div class="pos1">银屑病等顽固皮肤病</div>
+        <div class="desc">定位中重度、慢性皮肤顽疾（银屑病）。复方丙酸氯倍他索为全渠道第一。这类产品处方属性强、患者黏性高，是院内处方+院外长期管理的承接点。<br>
+        <span class="pill">银屑病</span><span class="pill">顽疾</span><span class="pill">处方强</span></div>
+      </div>
+      <div class="brand" style="--bc:var(--purple)">
+        <div class="bn" style="color:var(--purple)">质茂®</div>
+        <div class="pos1">毛发 / 脱发（第二曲线）</div>
+        <div class="desc">代表产品米诺地尔搽剂，主攻雄激素性脱发与斑秃。脱发是高频消费医疗、强复购、高客单，且高度线上化（年轻用户为主），是知原近年的增长引擎之一。<br>
+        <span class="pill">脱发</span><span class="pill">AGA</span><span class="pill">高增长</span></div>
+      </div>
+      <div class="brand" style="--bc:var(--red)">
+        <div class="bn" style="color:var(--red)">质润®</div>
+        <div class="pos1">头皮洗护（消费延伸）</div>
+        <div class="desc">二硫化硒去屑洗发水，属"医疗级个护"延伸。从药品向日常洗护破圈，拓宽消费人群、降低获客门槛，是品牌大众化/年轻化的触角。<br>
+        <span class="pill">去屑</span><span class="pill">洗护</span><span class="pill">消费级</span></div>
+      </div>
+      <div class="brand" style="--bc:var(--muted)">
+        <div class="bn">Ziyond 知原</div>
+        <div class="pos1">企业品牌（研发制造背书）</div>
+        <div class="desc">作为企业品牌提供研发与制造信任背书，产品品牌负责前端心智。招股书强调"AI驱动数字化转型抢占用户认知高地"，企业品牌赋能各产品牌统一调性。<br>
+        <span class="pill">研发</span><span class="pill">制造</span><span class="pill">背书</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="tag">证据</span> 品牌力：8款产品居品类第一，新品"上市即爆"</h2>
+    <table class="lftable">
+      <thead><tr><th>维度</th><th>数据（2025 / 往绩期）</th></tr></thead>
+      <tbody>
+        <tr><td>全渠道同类第一产品</td><td class="hl">5款</td></tr>
+        <tr><td>线上渠道同类第一产品</td><td class="hl">3款</td></tr>
+        <tr><td>新品爬坡速度（线上登顶）</td><td>克林霉素溶液 / 阿莫罗芬搽剂：上市后≤3个月线上第1/2；环吡酮胺乳膏：≤5个月第1；吡美莫司乳膏：≤7个月第1；氨甲环酸片：≤12个月第1</td></tr>
+      </tbody>
+    </table>
+    <div class="note">弗若斯特沙利文数据：2025年知原有5款产品在线上线下所有渠道居各自类别首位，3款在线上渠道居首位。能"上市后数月内登顶线上第一"，说明其品牌运营+流量打法已形成可复制的爆品机制。</div>
+    <div class="takeaway"><b>洞察：</b>品牌力不是靠单一大单品，而是"多品牌×多爆品"的组合拳。每个产品品牌都有至少1款品类第一产品坐镇，既能撑起品牌心智，又能为DTC旗舰店持续供应用户入口——这正是其线上零售毛利率高达76%、且能承受高营销投放的底气。</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="tag">战略</span> 品牌战略：多品牌矩阵 + 数字化抢占认知 + 募资提品牌</h2>
+    <div class="insight">
+      • <b>多品牌矩阵</b>：按治疗领域/消费场景切分品牌（皮肤/抗真菌/银屑病/毛发/洗护），避免单品牌承载过宽、心智模糊。<br>
+      • <b>数字化品牌占位</b>：招股书明确将"加速AI驱动数字化转型以抢占用户认知高地""通过用户体验和口碑建立长期品牌价值"列入战略；品牌力高度依赖对消费者需求的预判与线上触达。<br>
+      • <b>募资用途</b>：部分募资将用于"提升品牌及市场影响力"（含营销与品牌投入）。<br>
+      • <b>风险意识</b>：招股书将"未能树立/提升品牌知名度"列为经营风险，并强调商标是支撑品牌与消费者认知的宝贵资产——侧面印证品牌是其核心护城河。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="tag">行动</span> 对贵司（医药电商运营）的启示</h2>
+    <div class="insight">
+      1. <b>多品牌/多心智切分</b>：贵司若运营多品类（呼吸/肠胃/皮肤/骨健康/维矿），可借鉴"按人群或场景"建立子品牌/产品线心智，而非用单一企业品牌通吃。<br>
+      2. <b>爆品机制可复制</b>：知原"上市后数月登顶线上第一"靠的是"精准定位品类第一空白+集中流量打爆"。贵司选品时可优先找"品类无绝对霸主"的细分赛道，用投放快速占位。<br>
+      3. <b>品牌力=费率护城河</b>：强品牌带来自然搜索与复购，能摊薄83%的平台投放成本。评估是否值得重投品牌，看其能否降低对买量的依赖。<br>
+      4. <b>消费医疗延伸</b>：质茂®（脱发）、质润®（洗护）代表"药品→消费医疗→个护"的破圈路径，与贵司兴趣电商（抖音）的人群运营高度契合，可优先布局高复购消费医疗品类。<br>
+      5. <b>企业品牌做背书</b>：前端产品品牌打心智、后端企业品牌（如贵司上市公司主体）做信任背书，组合使用。
+    </div>
+    <div class="note">说明：品牌定位与产品明细均来自招股书披露；"小粉管"等为产品昵称未在正文逐字确认，文中以招股书正式产品名为准。</div>
+  </div>
+
+</div>
+</body>
+</html>
